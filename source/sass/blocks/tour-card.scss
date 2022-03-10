@@ -1,0 +1,49 @@
+.tour-card {
+  position: relative;
+  max-width: 260px;
+  min-height: 368px;
+
+  &:hover .tour-card__hover-wrapper,
+  &:focus .tour-card__hover-wrapper{
+    display: block;
+  }
+}
+
+.tour-card__wrapper {
+  position: relative;
+}
+
+.tour-card__wrapper h3 {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  margin: 0;
+}
+
+.tour-card__image {
+  min-height: 368px;
+  object-fit: cover;
+}
+
+.tour-card__hover-wrapper {
+  position: absolute;
+  top: 0;
+  display: none;
+  padding: 35px 25px;
+  max-width: 260px;
+  // исправьть
+  // max-height: 368px;
+  background-color: $color-tangaroa-blue;
+}
+
+.tour-card__hover-wrapper h3 {
+  margin: 0 0 25px 0;
+}
+
+.tour-card__hover-wrapper h4 {
+  margin: 0 0 10px 0;
+}
+
+.tour-card__hover-wrapper p {
+  margin: 0 0 20px 0;
+}
