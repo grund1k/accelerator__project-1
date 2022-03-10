@@ -1,0 +1,44 @@
+.feature {
+  max-width: 360px;
+  min-height: 241px;
+  padding: 87px 30px 30px 30px;
+  background-color: $color-alice-blue;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  &--ship::before {
+    width: 27px;
+    height: 32px;
+    background-image: url(../img/svg/ship.svg);
+  }
+
+  &--all-inclusive::before {
+    width: 38px;
+    height: 21px;
+    background-image: url(../img/svg/all-inclusive.svg);
+  }
+
+  &--boat::before {
+    width: 42px;
+    height: 15px;
+    background-image: url(../img/svg/boat.svg);
+  }
+}
+
+.feature h3 {
+  margin: 0 0 20px 0;
+}
+
+.feature p {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
