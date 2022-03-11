@@ -1,6 +1,6 @@
 .header {
   padding: 35px 0;
-  background-color: #0e6bd4;
+  background-color: $color-navy-blue;
   position: relative;
 
   @include vp-768 {
@@ -47,8 +47,13 @@
   align-items: center;
 }
 
+.header__logo {
+  z-index: 3;
+}
+
 .header__toggle {
   display: none;
+  z-index: 3;
 
   @include vp-320 {
     display: block;
@@ -64,6 +69,7 @@
 }
 
 .header__nav {
+  z-index: 3;
   @include vp-320 {
     min-width: 285px;
     height: 100vh;
@@ -72,6 +78,5 @@
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 1;
   }
 }
