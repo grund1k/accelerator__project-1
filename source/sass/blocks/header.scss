@@ -62,3 +62,16 @@
     padding: 0;
   }
 }
+
+.header__nav {
+  @include vp-320 {
+    min-width: 285px;
+    height: 100vh;
+    padding: 20px 15px 20px 25px;
+    background-color: $color-alice-blue;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
