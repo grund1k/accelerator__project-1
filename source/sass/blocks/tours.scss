@@ -1,6 +1,29 @@
+.tours {
+  padding: 120px 0;
+}
+
+.tours h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  margin: 0 0 60px 0;
+}
+
 .tours__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+
+  @include vp-768 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include vp-320 {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
 }
 
