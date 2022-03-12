@@ -1,5 +1,43 @@
+.features {
+  padding: 120px 0;
+  background-image: url(../img/content/features-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include vp-768 {
+    padding: 100px 0;
+  }
+
+  @include vp-320 {
+    padding: 65px 0;
+  }
+}
+
+.features h2 {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  margin: 0 0 60px 0;
+
+  @include vp-768 {
+    font-size: 26px;
+  }
+}
+
 .features__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+
+  @include vp-768 {
+    gap: 30px;
+  }
+
+  @include vp-320 {
+    grid-template-columns: 1fr
+  }
 }
