@@ -25,8 +25,8 @@ const validateForm = (targetInput, texts, formKey, regex) => {
   targetInput.reportValidity();
 };
 
-const validateCheckBox = () => {
-  if (!UserAgreeCheckbox.checked) {
+const switchButton = () => {
+  if (!userNameInput.reportValidity() || !userEmailInput.reportValidity() || !userTelephoneInput.reportValidity() || !UserAgreeCheckbox.checked) {
     formButton.disabled = true;
   } else {
     formButton.disabled = false;
@@ -36,15 +36,18 @@ const validateCheckBox = () => {
 const addValidation = () => {
   userNameInput.addEventListener('input', () => {
     validateForm(userNameInput, TEXTS);
+    switchButton();
   });
   userTelephoneInput.addEventListener('input', () => {
     validateForm(userTelephoneInput, TEXTS, 'telephoneError', TELEPHONE_REGEX);
+    switchButton();
   });
   userEmailInput.addEventListener('input', () => {
     validateForm(userEmailInput, TEXTS, 'emailError', EMAIL_REGEX);
+    switchButton();
   });
 
-  UserAgreeCheckbox.addEventListener('change', validateCheckBox);
+  UserAgreeCheckbox.addEventListener('change', switchButton);
 };
 
 const setFormSubmit = () => {
