@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {openMenu} from './modules/menu';
+import {setFormSubmit} from './modules/form';
 // ---------------------------------
 
 
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     openMenu();
   });
 
+  setFormSubmit();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
