@@ -1013,7 +1013,7 @@ button,
   padding: 50px 0;
   background-image: url(../img/content/booking-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 10%;
   background-size: cover;
   background-color: #aedcfa;
 }
@@ -1356,6 +1356,7 @@ button,
   }
 
   .book {
+    background-position: 70% 10%;
     padding: 100px 0;
   }
 
@@ -1673,5 +1674,19 @@ button,
   .footer__nav {
     margin-right: 0;
     margin-bottom: 30px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .main-screen {
+    background-image: url("../img/content/main-screen-bg.jpg");
+  }
+
+  .features {
+    background-image: url(../img/content/features-bg@2x.jpg);
+  }
+
+  .book {
+    background-image: url(../img/content/booking-bg@2x.jpg);
   }
 }

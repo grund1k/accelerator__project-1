@@ -4,6 +4,10 @@
   padding-bottom: 283px;
   background-image: url("../img/content/main-screen-bg.jpg");
 
+  @include retina {
+    background-image: url("../img/content/main-screen-bg.jpg");
+  }
+
   height: 100%;
 
   background-position: center;

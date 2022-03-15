@@ -12,7 +12,7 @@
     <link rel="preload" href="fonts/montserrat-regular.woff2" type="type/woff2" as="font">
     <link rel="preload" href="fonts/montserrat-semibold.woff2" type="type/woff2" as="font">
   </head>
-  <body>
+  <body class="body">
     <div class="wrapper">
       <header class="header header--no-js header--nav-open">
         <div class="header__wrapper container">
@@ -33,16 +33,16 @@
             </div>
             <ul class="nav__list">
               <li class="nav__list-item">
-                <a href="#">Преимущества</a>
+                <a href="#features">Преимущества</a>
               </li>
               <li class="nav__list-item">
                 <a href="#">Направления</a>
               </li>
               <li class="nav__list-item">
-                <a href="#">Ближайшие круизы</a>
+                <a href="#tours">Ближайшие круизы</a>
               </li>
               <li class="nav__list-item">
-                <a href="#">Контакты</a>
+                <a href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -61,10 +61,14 @@
               <h2>Путешествие на край Земли</h2>
               <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
             </div>
-            <img class="description__img" src="img/content/penguins.jpg" width="560" height="301" alt="Фотография трёх пингивнов">
+            <picture>
+              <source type="image/webp" srcset="img/content/penguins.webp 1x, img/content/penguins@2x.webp 2x">
+              <!-- 1х: 560px; 2x: 1120px -->
+              <img class="description__img" src="img/content/penguins.jpg" srcset="img/content/penguins@2x.jpg 2x" width="560" height="301" alt="Фотография трёх пингивнов">
+            </picture>
           </div>
         </section>
-        <section class="features">
+        <section class="features" id="features">
           <div class="container">
             <h2>Преимущества</h2>
             <ul class="features__list">
@@ -84,14 +88,18 @@
             </ul>
           </div>
         </section>
-        <section class="tours">
+        <section class="tours" id="tours">
           <div class="container">
             <h2>Ближайшие круизы</h2>
             <ul class="tours__list">
 
               <li class="tours__list-item tour-card">
                 <div class="tour-card__wrapper">
-                  <img src="img/content/cruise-1.jpg" alt="Фотография с круиза Астория. Видны горы и замершее море." width="260" height="368">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cruise-1.webp 1x, img/content/cruise-1@2x.webp 2x ">
+                    <!-- 1х: 800px; 2x: 1600px -->
+                    <img src="img/content/cruise-1.jpg" srcset="img/content/cruise-1@2x.jpg" alt="Фотография с круиза Астория." width="260" height="368">
+                  </picture>
                   <h3>Круиз “Астория”</h3>
                 </div>
 
@@ -113,13 +121,17 @@
                     <h4>Цена</h4>
                     <p>от 11500 $</p>
                   </div>
-                  <a href="#" class="btn">Забронировать</a>
+                  <a href="/book" class="btn">Забронировать</a>
                 </div>
               </li>
 
               <li class="tours__list-item tour-card">
                 <div class="tour-card__wrapper">
-                  <img class="tour-card__image" src="img/content/cruise-1.jpg" alt="Фотография с круиза Астория. Видны горы и замершее море." width="260" height="368">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cruise-1.webp 1x, img/content/cruise-1@2x.webp 2x">
+                    <!-- 1х: 800px; 2x: 1600px -->
+                    <img src="img/content/cruise-1.jpg" srcset="img/content/cruise-1@2x.jpg 2x" alt="Фотография с круиза Элайн." width="260" height="368">
+                  </picture>
                   <h3>Круиз “Элайн”</h3>
                 </div>
 
@@ -141,13 +153,17 @@
                     <h4>Цена</h4>
                     <p>от 14500 $</p>
                   </div>
-                  <a href="#" class="btn">Забронировать</a>
+                  <a href="/book" class="btn">Забронировать</a>
                 </div>
               </li>
 
               <li class="tours__list-item tour-card">
                 <div class="tour-card__wrapper">
-                  <img class="tour-card__image" src="img/content/cruise-3.jpg" alt="Фотография с круиза Астория. Видны горы и замершее море." width="260" height="368">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cruise-3.webp 1x, img/content/cruise-3@2x.webp 2x">
+                    <!-- 1х: 800px; 2x: 1600px -->
+                    <img class="tour-card__image" src="img/content/cruise-3.jpg" srcset="img/content/cruise-3@2x.jpg 2x" alt="Фотография с круиза Атлантис." width="260" height="368">
+                  </picture>
                   <h3>Круиз "Атлантис"</h3>
                 </div>
 
@@ -169,13 +185,17 @@
                     <h4>Цена</h4>
                     <p>от 14500 $</p>
                   </div>
-                  <a href="#" class="btn">Забронировать</a>
+                  <a href="/book" class="btn">Забронировать</a>
                 </div>
               </li>
 
               <li class="tours__list-item tour-card">
                 <div class="tour-card__wrapper">
-                  <img class="tour-card__image" src="img/content/cruise-4.jpg" alt="Фотография с круиза Астория. Видны горы и замершее море." width="260" height="368">
+                  <picture>
+                    <!-- 1х: 3946px; 2x: 7892px -->
+                    <source type="image/webp" srcset="img/content/cruise-4.webp 1x, img/content/cruise-4@2x.webp 2x">
+                    <img class="tour-card__image" src="img/content/cruise-4.jpg" srcset="img/content/cruise-4@2x.jpg 2x" alt="Фотография с круиза Одиссей." width="260" height="368">
+                  </picture>
                   <h3>Круиз "Одиссей"</h3>
                 </div>
 
@@ -197,13 +217,17 @@
                     <h4>Цена</h4>
                     <p>от 9700 $</p>
                   </div>
-                  <a href="#" class="btn">Забронировать</a>
+                  <a href="/book" class="btn">Забронировать</a>
                 </div>
               </li>
 
               <li class="tours__list-item tour-card">
                 <div class="tour-card__wrapper">
-                  <img class="tour-card__image" src="img/content/cruise-5.jpg" alt="Фотография с круиза Астория. Видны горы и замершее море." width="260" height="368">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cruise-5.webp 1x, img/content/cruise-5@2x.webp 2x">
+                    <!-- 1х: 800px; 2x: 1600px -->
+                    <img class="tour-card__image" src="img/content/cruise-5.jpg" srcset="img/content/cruise-5@2x.jpg 2x" alt="Фотография с круиза Олимпия." width="260" height="368">
+                  </picture>
                   <h3>Круиз "Олимпия"</h3>
                 </div>
 
@@ -225,13 +249,17 @@
                     <h4>Цена</h4>
                     <p>от 18600 $</p>
                   </div>
-                  <a href="#" class="btn">Забронировать</a>
+                  <a href="/book" class="btn">Забронировать</a>
                 </div>
               </li>
 
               <li class="tours__list-item tour-card">
                 <div class="tour-card__wrapper">
-                  <img class="tour-card__image" src="img/content/cruise-6.jpg" alt="Фотография с круиза Астория. Видны горы и замершее море." width="260" height="368">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cruise-6.webp 1x, img/content/cruise-6@2x.webp 2x">
+                    <!-- 1х: 1280px; 2x: 2560px -->
+                    <img class="tour-card__image" src="img/content/cruise-6.jpg" srcset="img/content/cruise-6@2x.jpg 2x" alt="Фотография с круиза Аврора." width="260" height="368">
+                  </picture>
                   <h3>Круиз "Аврора"</h3>
                 </div>
 
@@ -253,13 +281,17 @@
                     <h4>Цена</h4>
                     <p>от 11700 $</p>
                   </div>
-                  <a href="#" class="btn">Забронировать</a>
+                  <a href="/book" class="btn">Забронировать</a>
                 </div>
               </li>
 
               <li class="tours__list-item tour-card">
                 <div class="tour-card__wrapper">
-                  <img class="tour-card__image" src="img/content/cruise-7.jpg" alt="Фотография с круиза Астория. Видны горы и замершее море." width="260" height="368">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cruise-7.webp 1x, img/content/cruise-7@2x.webp 2x">
+                    <!-- 1х: 1280px; 2x: 2560px -->
+                    <img class="tour-card__image" src="img/content/cruise-7.jpg" srcset="img/content/cruise-7@2x.jpg 2x" alt="Фотография с круиза Леонора." width="260" height="368">
+                  </picture>
                   <h3>Круиз "Леонор"</h3>
                 </div>
 
@@ -281,13 +313,17 @@
                     <h4>Цена</h4>
                     <p>от 12500 $</p>
                   </div>
-                  <a href="#" class="btn">Забронировать</a>
+                  <a href="/book" class="btn">Забронировать</a>
                 </div>
               </li>
 
               <li class="tours__list-item tour-card">
                 <div class="tour-card__wrapper">
-                  <img class="tour-card__image" src="img/content/cruise-8.jpg" alt="Фотография с круиза Астория. Видны горы и замершее море." width="260" height="368">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cruise-8.webp 1x, img/content/cruise-8@2x.webp 2x">
+                    <!-- 1х: 1280px; 2x: 2560px -->
+                    <img class="tour-card__image" src="img/content/cruise-8.jpg" srcset="img/content/cruise-8@2x.jpg 2x" alt="Фотография с круиза Минион - 1." width="260" height="368">
+                  </picture>
                   <h3>Круиз "Минион - 1"</h3>
                 </div>
 
@@ -309,7 +345,7 @@
                     <h4>Цена</h4>
                     <p>от 12300 $</p>
                   </div>
-                  <a href="#" class="btn">Забронировать</a>
+                  <a href="/book" class="btn">Забронировать</a>
                 </div>
               </li>
             </ul>
@@ -349,7 +385,8 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
           <div class="contacts__wrapper container">
             <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003174!2d30.320858716201972!3d59.93871916905406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1647284498332!5m2!1sru!2sru" width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <div class="contacts__text-wrapper">

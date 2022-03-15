@@ -2,11 +2,16 @@
   padding: 50px 0;
   background-image: url(../img/content/booking-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 10%;
   background-size: cover;
   background-color: $color-columbia-blue;
 
+  @include retina {
+    background-image: url(../img/content/booking-bg@2x.jpg);
+  }
+
   @include vp-1365 {
+    background-position: 70% 10%;
     padding: 100px 0;
   }
 
