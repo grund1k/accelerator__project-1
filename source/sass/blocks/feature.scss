@@ -15,21 +15,21 @@
   &--ship::before {
     width: 27px;
     height: 32px;
-    background-image: url(../img/svg/ship.svg);
+    background-image: url("../img/svg/ship.svg");
     top: 25px;
   }
 
   &--all-inclusive::before {
     width: 38px;
     height: 21px;
-    background-image: url(../img/svg/all-inclusive.svg);
+    background-image: url("../img/svg/all-inclusive.svg");
     top: 31px;
   }
 
   &--boat::before {
     width: 42px;
     height: 15px;
-    background-image: url(../img/svg/boat.svg);
+    background-image: url("../img/svg/boat.svg");
     top: 34px;
   }
 

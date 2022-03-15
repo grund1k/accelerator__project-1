@@ -4,7 +4,7 @@
   min-height: 386px;
 
   &:hover .tour-card__hover-wrapper,
-  &:focus .tour-card__hover-wrapper{
+  &:focus .tour-card__hover-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,7 +25,7 @@
   font-size: 18px;
 }
 
-.tour-card__wrapper img{
+.tour-card__wrapper img {
   width: 100%;
   min-height: 386px;
   object-fit: cover;

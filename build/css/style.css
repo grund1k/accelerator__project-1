@@ -665,8 +665,8 @@ button,
 }
 
 .btn:active {
-  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .btn:disabled {
@@ -833,7 +833,7 @@ button,
 
 .features {
   padding: 120px 0;
-  background-image: url(../img/content/features-bg.jpg);
+  background-image: url("../img/content/features-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -876,21 +876,21 @@ button,
 .feature--ship::before {
   width: 27px;
   height: 32px;
-  background-image: url(../img/svg/ship.svg);
+  background-image: url("../img/svg/ship.svg");
   top: 25px;
 }
 
 .feature--all-inclusive::before {
   width: 38px;
   height: 21px;
-  background-image: url(../img/svg/all-inclusive.svg);
+  background-image: url("../img/svg/all-inclusive.svg");
   top: 31px;
 }
 
 .feature--boat::before {
   width: 42px;
   height: 15px;
-  background-image: url(../img/svg/boat.svg);
+  background-image: url("../img/svg/boat.svg");
   top: 34px;
 }
 
@@ -1008,7 +1008,7 @@ button,
 
 .book {
   padding: 50px 0;
-  background-image: url(../img/content/booking-bg.jpg);
+  background-image: url("../img/content/booking-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 10%;
   background-size: cover;
@@ -1480,7 +1480,7 @@ button,
     height: 15px;
     border: none;
     background-color: transparent;
-    background-image: url(../img/svg/icon-close.svg);
+    background-image: url("../img/svg/icon-close.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     padding: 0;
@@ -1525,7 +1525,7 @@ button,
     height: 15px;
     border: none;
     background-color: transparent;
-    background-image: url(../img/svg/open-menu.svg);
+    background-image: url("../img/svg/open-menu.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     padding: 0;
@@ -1677,10 +1677,10 @@ button,
   }
 
   .features {
-    background-image: url(../img/content/features-bg@2x.jpg);
+    background-image: url("../img/content/features-bg@2x.jpg");
   }
 
   .book {
-    background-image: url(../img/content/booking-bg@2x.jpg);
+    background-image: url("../img/content/booking-bg@2x.jpg");
   }
 }

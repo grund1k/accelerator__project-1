@@ -1,13 +1,13 @@
 .features {
   padding: 120px 0;
-  background-image: url(../img/content/features-bg.jpg);
+  background-image: url("../img/content/features-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: $color-solitude;
 
   @include retina {
-    background-image: url(../img/content/features-bg@2x.jpg);
+    background-image: url("../img/content/features-bg@2x.jpg");
   }
 
   @include vp-1365 {
@@ -44,6 +44,6 @@
   }
 
   @include vp-767 {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
 }
