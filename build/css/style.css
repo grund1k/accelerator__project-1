@@ -679,11 +679,6 @@ button,
   color: #f9fbfd;
 }
 
-.nav a:hover,
-.nav a:focus {
-  text-decoration: underline;
-}
-
 .nav a:active {
   color: rgba(249, 251, 253, 0.8);
 }
@@ -827,7 +822,6 @@ button,
 }
 
 .description__text-wrapper p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -1026,11 +1020,11 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 144px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   justify-items: center;
+  gap: 144px;
   padding: 0 60px;
 }
 
@@ -1121,11 +1115,6 @@ button,
   color: #f9fbfd;
 }
 
-.form__checkbox label:hover,
-.form__checkbox label:focus {
-  text-decoration: underline;
-}
-
 .form__btn {
   min-height: 43px;
   font-weight: 600;
@@ -1168,17 +1157,11 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 10px;
-  font-weight: 400;
   font-size: 16px;
 }
 
 .contacts__text-wrapper a:not(:last-child) {
   margin: 0 0 25px 0;
-}
-
-.contacts__text-wrapper a:hover,
-.contacts__text-wrapper a:focus {
-  text-decoration: underline;
 }
 
 .contacts__text-wrapper a:active {
@@ -1254,6 +1237,21 @@ button,
   .btn:hover,
   .btn:focus {
     opacity: 0.8;
+  }
+
+  .nav a:hover,
+  .nav a:focus {
+    text-decoration: underline;
+  }
+
+  .form__checkbox label:hover,
+  .form__checkbox label:focus {
+    text-decoration: underline;
+  }
+
+  .contacts__text-wrapper a:hover,
+  .contacts__text-wrapper a:focus {
+    text-decoration: underline;
   }
 }
 

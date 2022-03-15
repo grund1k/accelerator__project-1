@@ -58,16 +58,17 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-weight: 400;
   font-size: 16px;
 
   &:not(:last-child) {
     margin: 0 0 25px 0;
   }
 
-  &:hover,
-  &:focus {
-    text-decoration: underline;
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 
   &:active {

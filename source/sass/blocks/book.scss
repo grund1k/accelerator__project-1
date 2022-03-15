@@ -23,9 +23,9 @@
 .book__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 144px;
   align-items: center;
   justify-items: center;
+  gap: 144px;
   padding: 0 60px;
 
   @include vp-1365 {
