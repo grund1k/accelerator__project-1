@@ -2,11 +2,11 @@
   background-color: $color-tangaroa-blue;
   padding: 50px 0;
 
-  @include vp-768 {
+  @include vp-1365 {
     padding: 55px 0;
   }
 
-  @include vp-320 {
+  @include vp-767 {
     padding: 40px 0;
   }
 }
@@ -16,7 +16,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  @include vp-320 {
+  @include vp-767 {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -25,11 +25,11 @@
 .footer__logo {
   margin-right: 40px;
 
-  @include vp-768 {
+  @include vp-1365 {
     margin-right: 25px;
   }
 
-  @include vp-320 {
+  @include vp-767 {
     margin-right: 0;
     margin-bottom: 30px;
   }
@@ -38,7 +38,7 @@
 .footer__nav {
   margin-right: auto;
 
-  @include vp-320 {
+  @include vp-767 {
     margin-right: 0;
     margin-bottom: 30px;
   }

@@ -13,17 +13,17 @@
       color: $color-alice-blue-trasperent;
     }
 
-    @include vp-768 {
+    @include vp-1365 {
       font-size: 14px;
     }
 
-    @include vp-320 {
+    @include vp-767 {
       font-size: 18px;
       color: $color-tangaroa-blue;
     }
   }
 
-  @include vp-320 {
+  @include vp-767 {
     &--footer a {
       color: $color-alice-blue;
       font-size: 12px;
@@ -38,7 +38,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @include vp-320 {
+  @include vp-767 {
     flex-direction: column;
   }
 }
@@ -50,11 +50,11 @@
     margin-right: 0;
   }
 
-  @include vp-768 {
+  @include vp-1365 {
     margin-right: 23px;
   }
 
-  @include vp-320 {
+  @include vp-767 {
     margin-right: 0;
 
     &:not(:last-child) {
@@ -72,7 +72,7 @@
 .nav__modal-warraper {
   display: none;
 
-  @include vp-320 {
+  @include vp-767 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +83,7 @@
 .nav__modal-logo {
   display: none;
 
-  @include vp-320 {
+  @include vp-767 {
     display: block;
   }
 }
@@ -91,7 +91,7 @@
 .nav__modal-toggle {
   display: none;
 
-  @include vp-320 {
+  @include vp-767 {
     display: block;
     width: 24px;
     height: 15px;
