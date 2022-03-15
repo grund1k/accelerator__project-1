@@ -1,13 +1,13 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {openMenu} from './modules/menu';
 import {setFormSubmit} from './modules/form';
+import {setSmoothsScroll} from './modules/acnchor-smooth-scroll';
 // ---------------------------------
 
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
-  // ---------------------------------
 
   iosVhFix();
   // Modules
@@ -18,11 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   setFormSubmit();
-  // ---------------------------------
 
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
-  // window.addEventListener('load', () => {
-  //   initModals();
-  // });
+  const smoothLinks = document.querySelectorAll('a[href^="#"]');
+
+  setSmoothsScroll(smoothLinks);
 });
