@@ -26,7 +26,7 @@ const validateForm = (targetInput, texts, formKey, regex) => {
 };
 
 const switchButton = () => {
-  if (!userNameInput.reportValidity() || !userEmailInput.reportValidity() || !userTelephoneInput.reportValidity() || !UserAgreeCheckbox.checked) {
+  if (!UserAgreeCheckbox.checked) {
     formButton.disabled = true;
   } else {
     formButton.disabled = false;
@@ -34,20 +34,24 @@ const switchButton = () => {
 };
 
 const addValidation = () => {
-  userNameInput.addEventListener('input', () => {
-    validateForm(userNameInput, TEXTS);
-    switchButton();
-  });
-  userTelephoneInput.addEventListener('input', () => {
-    validateForm(userTelephoneInput, TEXTS, 'telephoneError', TELEPHONE_REGEX);
-    switchButton();
-  });
-  userEmailInput.addEventListener('input', () => {
-    validateForm(userEmailInput, TEXTS, 'emailError', EMAIL_REGEX);
-    switchButton();
-  });
-
-  UserAgreeCheckbox.addEventListener('change', switchButton);
+  if (userNameInput) {
+    userNameInput.addEventListener('input', () => {
+      validateForm(userNameInput, TEXTS);
+    });
+  }
+  if (userTelephoneInput) {
+    userTelephoneInput.addEventListener('input', () => {
+      validateForm(userTelephoneInput, TEXTS, 'telephoneError', TELEPHONE_REGEX);
+    });
+  }
+  if (userEmailInput) {
+    userEmailInput.addEventListener('input', () => {
+      validateForm(userEmailInput, TEXTS, 'emailError', EMAIL_REGEX);
+    });
+  }
+  if (UserAgreeCheckbox) {
+    UserAgreeCheckbox.addEventListener('change', switchButton);
+  }
 };
 
 const setFormSubmit = () => {
