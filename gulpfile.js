@@ -112,6 +112,15 @@ const refresh = (done) => {
   done();
 };
 
+const optimizeImages = () => {
+  return gulp.src('build/img/**/*.{png,jpg}')
+      .pipe(imagemin([
+        imagemin.optipng({optimizationLevel: 3}),
+        imagemin.mozjpeg({quality: 75, progressive: true}),
+      ]))
+      .pipe(gulp.dest('build/img'));
+};
+
 const build = gulp.series(clean, svgo, copy, css, sprite, js, optimizeImages);
 
 const start = gulp.series(build, syncServer);
@@ -130,15 +139,6 @@ const createWebp = () => {
   return gulp.src(`source/img/${root}**/*.{png,jpg}`)
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest(`source/img/${root}`));
-};
-
-const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
-      .pipe(imagemin([
-        imagemin.optipng({optimizationLevel: 3}),
-        imagemin.mozjpeg({quality: 75, progressive: true}),
-      ]))
-      .pipe(gulp.dest('build/img'));
 };
 
 exports.imagemin = optimizeImages;
