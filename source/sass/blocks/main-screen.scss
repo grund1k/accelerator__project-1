@@ -1,7 +1,7 @@
 .main-screen {
   background-color: $color-navy-blue;
   padding-top: 298px;
-  padding-bottom: 283px;
+  padding-bottom: 274px;
   background-image: url("../img/content/main-screen-bg.jpg");
 
   @include retina {
@@ -15,8 +15,13 @@
   background-size: cover;
 
   @include vp-1365 {
-    padding-top: 200px;
-    padding-bottom: 280px;
+    padding-top: 312px;
+    padding-bottom: 270px;
+  }
+
+  @include vp-767 {
+    padding-top: 225px;
+    padding-bottom: 162px;
   }
 }
 

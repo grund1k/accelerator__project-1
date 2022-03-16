@@ -1,5 +1,5 @@
 .book {
-  padding: 50px 0;
+  padding: 50px 0 45px 0;
   background-image: url("../img/content/booking-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 10%;
@@ -16,24 +16,26 @@
   }
 
   @include vp-767 {
-    padding: 65px 0;
+    padding: 57px 0 70px 0;
   }
 }
 
 .book__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 564px 1fr;
   align-items: center;
-  justify-items: center;
-  gap: 144px;
-  padding: 0 60px;
+  gap: 70px;
+  padding: 0 63px;
+  margin: 0 auto;
 
   @include vp-1365 {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 51px;
+    justify-items: center;
   }
 
   @include vp-767 {
+    gap: 33px;
     padding: 0;
   }
 }
@@ -41,7 +43,6 @@
 .book__text-wrapper h2 {
   font-weight: 700;
   font-size: 40px;
-  line-height: 150%;
   margin: 0 0 30px 0;
 
   @include vp-1365 {
@@ -51,8 +52,10 @@
   }
 
   @include vp-767 {
+    max-width: 194px;
     font-size: 24px;
     line-height: 130%;
+    margin: 0 auto 13px auto;
   }
 }
 
@@ -70,7 +73,12 @@
   }
 
   @include vp-767 {
+    max-width: 248px;
     font-size: 16px;
     line-height: 140%;
+
+    &:not(:last-child) {
+      margin: 0 auto 20px auto;
+    }
   }
 }
