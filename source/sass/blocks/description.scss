@@ -1,7 +1,7 @@
 .description {
   padding: 120px 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 100px 0 92px 0;
   }
 
@@ -15,7 +15,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     align-items: flex-start;
     gap: 30px;
   }
@@ -30,7 +30,7 @@
 .description__text-wrapper {
   margin-top: 67px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-top: 0;
   }
 }
@@ -40,7 +40,7 @@
   min-height: 301px;
   object-fit: cover;
 
-  @include vp-1365 {
+  @include vp-1023 {
     min-height: 264px;
   }
 
@@ -55,7 +55,7 @@
   margin: 0 0 31px 0;
   letter-spacing: 1.5px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     max-width: 206px;
     font-size: 26px;
     line-height: 36px;

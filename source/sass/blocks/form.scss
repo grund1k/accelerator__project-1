@@ -4,7 +4,7 @@
   padding: 50px;
   background-color: $color-tangaroa-blue;
 
-  @include vp-1365 {
+  @include vp-1023 {
     max-width: 403px;
     min-width: auto;
     padding-top: 41px;
@@ -23,7 +23,7 @@
   color: $color-alice-blue;
   margin: 0 0 20px 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     letter-spacing: 1.2px;
     margin-bottom: 28px;
   }

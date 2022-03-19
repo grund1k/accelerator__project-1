@@ -1284,6 +1284,12 @@ button,
 
 @media (max-width: 1365px) {
   .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
     padding: 0 45px;
   }
 
@@ -1512,7 +1518,7 @@ button,
   }
 }
 
-@media (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1365px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1365px) and (min-resolution: 144dpi), (max-width: 1365px) and (min-resolution: 1.5dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .main-screen {
     background-image: url("../img/content/main-screen-tablet-bg.jpg");
   }

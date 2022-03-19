@@ -10,7 +10,7 @@
     background-image: url("../img/content/features-bg@2x.jpg");
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 100px 0;
   }
 
@@ -26,7 +26,7 @@
   letter-spacing: 2px;
   margin: 0 0 60px 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 26px;
     margin-bottom: 53px;
   }
@@ -46,7 +46,7 @@
   justify-items: center;
   gap: 40px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     gap: 30px;
   }
 

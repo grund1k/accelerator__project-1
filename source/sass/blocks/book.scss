@@ -10,7 +10,7 @@
     background-image: url("../img/content/booking-bg@2x.jpg");
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     background-position: 70% 10%;
     padding: 100px 0;
   }
@@ -28,7 +28,7 @@
   padding: 0 63px;
   margin: 0 auto;
 
-  @include vp-1365 {
+  @include vp-1023 {
     grid-template-columns: 1fr;
     gap: 51px;
     justify-items: center;
@@ -46,7 +46,7 @@
   letter-spacing: 2px;
   margin: 0 0 30px 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 34px;
     text-align: center;
     margin: 0 0 25px 0;
@@ -70,7 +70,7 @@
     margin: 0 0 20px 0;
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     text-align: center;
     letter-spacing: 1px;
     margin: 0 auto 0 auto;

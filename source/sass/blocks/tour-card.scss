@@ -36,7 +36,7 @@
   min-height: 386px;
   object-fit: cover;
 
-  @include vp-1365 {
+  @include vp-1023 {
     min-height: 386px;
   }
 }

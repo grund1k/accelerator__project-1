@@ -2,7 +2,7 @@
   padding: 120px 0;
 
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 100px 0;
   }
 
@@ -17,7 +17,7 @@
   align-items: center;
   gap: 100px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     gap: 30px;
     align-items: flex-start;
   }
@@ -32,7 +32,7 @@
   min-height: 306px;
   border: none;
 
-  @include vp-1365 {
+  @include vp-1023 {
     max-width: 324px;
     min-height: 335px;
   }
@@ -44,7 +44,7 @@
 }
 
 .contacts__text-wrapper {
-  @include vp-1365 {
+  @include vp-1023 {
     margin-top: 65px;
   }
 
@@ -60,7 +60,7 @@
   line-height: 150%;
   margin: 0 0 30px 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     letter-spacing: 1.4px;
     margin: 0 0 25px 0;
   }
@@ -87,7 +87,7 @@
     color: $color-tangaroa-blue-transperent;
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     align-items: flex-start;
     max-width: 286px;
     letter-spacing: 1px;
