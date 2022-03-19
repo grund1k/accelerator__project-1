@@ -965,6 +965,18 @@ button,
   position: relative;
 }
 
+.tour-card__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40));
+  background-image: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+  background-image: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+}
+
 .tour-card__wrapper h3 {
   position: absolute;
   left: 30px;
@@ -974,6 +986,7 @@ button,
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 2px;
+  z-index: 1;
 }
 
 .tour-card__wrapper img {

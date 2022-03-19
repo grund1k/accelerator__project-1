@@ -20,6 +20,16 @@
 
 .tour-card__wrapper {
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: $blue-to-bottom;
+  }
 }
 
 .tour-card__wrapper h3 {
@@ -31,6 +41,7 @@
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 2px;
+  z-index: 1;
 
   @include vp-767 {
     left: 26px;
