@@ -3,8 +3,15 @@
   width: 100%;
   min-height: 386px;
 
+  &:hover .tour-card__wrapper,
+  &:focus .tour-card__wrapper,
+  &:focus-within .tour-card__wrapper {
+    display: none;
+  }
+
   &:hover .tour-card__hover-wrapper,
-  &:focus .tour-card__hover-wrapper {
+  &:focus .tour-card__hover-wrapper,
+  &:focus-within .tour-card__hover-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,7 +49,6 @@
 }
 
 .tour-card__hover-wrapper {
-  position: absolute;
   top: 0;
   display: none;
   padding: 35px 25px;

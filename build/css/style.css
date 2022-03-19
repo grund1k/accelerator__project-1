@@ -946,8 +946,15 @@ button,
   min-height: 386px;
 }
 
+.tour-card:hover .tour-card__wrapper,
+.tour-card:focus .tour-card__wrapper,
+.tour-card:focus-within .tour-card__wrapper {
+  display: none;
+}
+
 .tour-card:hover .tour-card__hover-wrapper,
-.tour-card:focus .tour-card__hover-wrapper {
+.tour-card:focus .tour-card__hover-wrapper,
+.tour-card:focus-within .tour-card__hover-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -983,7 +990,6 @@ button,
 }
 
 .tour-card__hover-wrapper {
-  position: absolute;
   top: 0;
   display: none;
   padding: 35px 25px;
