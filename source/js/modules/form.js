@@ -1,11 +1,14 @@
+import {sendData} from './api';
+
 const userNameInput = document.querySelector('#user-name');
 const userTelephoneInput = document.querySelector('#user-telephone');
 const userEmailInput = document.querySelector('#user-email');
 const UserAgreeCheckbox = document.querySelector('#user-agree');
 const formButton = document.querySelector('.form__btn');
 const bookForm = document.querySelector('#book-form');
+const checkBoxLabel = document.querySelector('.form__checkbox-label');
 
-const EMAIL_REGEX = /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;
+const EMAIL_REGEX = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 const TELEPHONE_REGEX = /(^8|7|\+7)((\d{10})|(\s\(\d{3}\)\s\d{3}\s\d{2}\s\d{2}))/;
 
 const TEXTS = {
@@ -52,6 +55,37 @@ const addValidation = () => {
   if (UserAgreeCheckbox) {
     UserAgreeCheckbox.addEventListener('change', switchButton);
   }
+
+  if (checkBoxLabel) {
+    checkBoxLabel.addEventListener('keydown', (evt) =>{
+      if (evt.key === 'Enter') {
+        evt.preventDefault();
+        UserAgreeCheckbox.checked = true;
+      }
+    });
+  }
+};
+
+const showLoadAlert = (message) => {
+  const alertContainer = document.createElement('div');
+  alertContainer.style.zIndex = 100;
+  alertContainer.style.position = 'fixed';
+  alertContainer.style.left = 0;
+  alertContainer.style.top = 0;
+  alertContainer.style.right = 0;
+  alertContainer.style.padding = '10px 3px';
+  alertContainer.style.fontSize = '30px';
+  alertContainer.style.color = 'red';
+  alertContainer.style.textAlign = 'center';
+  alertContainer.style.backgroundColor = 'white';
+
+  alertContainer.textContent = message;
+
+  document.body.append(alertContainer);
+
+  setTimeout(() => {
+    alertContainer.remove();
+  }, 5000);
 };
 
 const setFormSubmit = () => {
@@ -59,6 +93,12 @@ const setFormSubmit = () => {
 
   bookForm.addEventListener('submit', (evt) => {
     evt.preventDefault();
+
+    sendData(
+        () => showLoadAlert('Форма успешно отправлена'),
+        () => showLoadAlert('Проверьте форму'),
+        new FormData(evt.target)
+    );
   });
 };
 
