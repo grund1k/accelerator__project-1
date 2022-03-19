@@ -43,6 +43,7 @@
 .book__text-wrapper h2 {
   font-weight: 700;
   font-size: 40px;
+  letter-spacing: 2px;
   margin: 0 0 30px 0;
 
   @include vp-1365 {
@@ -60,6 +61,7 @@
 }
 
 .book__text-wrapper p {
+  max-width: 352px;
   font-size: 18px;
   line-height: 150%;
   margin: 0;
@@ -70,6 +72,12 @@
 
   @include vp-1365 {
     text-align: center;
+    letter-spacing: 1px;
+    margin: 0 auto 0 auto;
+
+    &:not(:last-child) {
+      margin: 0 auto 20px auto;
+    }
   }
 
   @include vp-767 {
