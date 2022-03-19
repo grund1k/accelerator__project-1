@@ -1,41 +1,15 @@
 .main-screen {
-  background-color: $color-navy-blue;
-  padding-top: 294px;
-  padding-bottom: 278px;
-  background-image: url("../img/content/main-screen-bg.jpg");
-
-  @include retina {
-    background-image: url("../img/content/main-screen-bg.jpg");
-  }
-
-  height: 100%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-top: 220px;
+  padding-bottom: 244px;
 
   @include vp-1023 {
-    padding-top: 312px;
-    padding-bottom: 270px;
-
-    background-image: url("../img/content/main-screen-tablet-bg.jpg");
-    background-position: center 8px;
-
-    @include retina {
-      background-image: url("../img/content/main-screen-tablet-bg.jpg");
-    }
+    padding-top: 232px;
+    padding-bottom: 244px;
   }
 
   @include vp-767 {
-    padding-top: 225px;
-    padding-bottom: 178px;
-
-    background-image: url("../img/content/main-screen-mobile-bg.jpg");
-    background-position: center 8px;
-
-    @include retina {
-      background-image: url("../img/content/main-screen-mobile-bg.jpg");
-    }
+    padding-top: 137px;
+    padding-bottom: 159px;
   }
 }
 

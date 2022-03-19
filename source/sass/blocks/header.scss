@@ -2,8 +2,25 @@
   padding: 35px 0;
   background-color: $color-navy-blue;
 
+  background-image: url("../img/content/main-screen-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("../img/content/main-screen-bg.jpg");
+  }
+
+
   @include vp-1023 {
     padding: 30px 0;
+
+    background-image: url("../img/content/main-screen-tablet-bg.jpg");
+    background-position: center;
+
+    @include retina {
+      background-image: url("../img/content/main-screen-tablet-bg.jpg");
+    }
   }
 
   @include vp-767 {
@@ -36,6 +53,13 @@
 
     &--nav-close .header__nav {
       display: none;
+    }
+
+    background-image: url("../img/content/main-screen-mobile-bg.jpg");
+    background-position: center;
+
+    @include retina {
+      background-image: url("../img/content/main-screen-mobile-bg.jpg");
     }
   }
 }

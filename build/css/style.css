@@ -718,6 +718,10 @@ button,
 .header {
   padding: 35px 0;
   background-color: #0e6bd4;
+  background-image: url("../img/content/main-screen-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__wrapper {
@@ -748,27 +752,17 @@ button,
 .logo {
   width: 70px;
   height: 38px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .logo--blue {
   display: none;
 }
 
-.main__first-section {
-  position: relative;
-  z-index: 2;
-  margin-top: -108px;
-}
-
 .main-screen {
-  background-color: #0e6bd4;
-  padding-top: 294px;
-  padding-bottom: 278px;
-  background-image: url("../img/content/main-screen-bg.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-top: 220px;
+  padding-bottom: 244px;
 }
 
 .main-screen__wrapper {
@@ -1318,6 +1312,8 @@ button,
 
   .header {
     padding: 30px 0;
+    background-image: url("../img/content/main-screen-tablet-bg.jpg");
+    background-position: center;
   }
 
   .logo {
@@ -1326,10 +1322,8 @@ button,
   }
 
   .main-screen {
-    padding-top: 312px;
-    padding-bottom: 270px;
-    background-image: url("../img/content/main-screen-tablet-bg.jpg");
-    background-position: center 8px;
+    padding-top: 232px;
+    padding-bottom: 244px;
   }
 
   .main-screen__wrapper {
@@ -1529,7 +1523,7 @@ button,
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .main-screen {
+  .header {
     background-image: url("../img/content/main-screen-tablet-bg.jpg");
   }
 }
@@ -1605,6 +1599,8 @@ button,
   .header {
     padding: 20px 0;
     min-height: 62px;
+    background-image: url("../img/content/main-screen-mobile-bg.jpg");
+    background-position: center;
   }
 
   .header--no-js .header__toggle,
@@ -1667,10 +1663,8 @@ button,
   }
 
   .main-screen {
-    padding-top: 225px;
-    padding-bottom: 178px;
-    background-image: url("../img/content/main-screen-mobile-bg.jpg");
-    background-position: center 8px;
+    padding-top: 137px;
+    padding-bottom: 159px;
   }
 
   .main-screen__wrapper h1 {
@@ -1849,13 +1843,13 @@ button,
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .main-screen {
+  .header {
     background-image: url("../img/content/main-screen-mobile-bg.jpg");
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .main-screen {
+  .header {
     background-image: url("../img/content/main-screen-bg.jpg");
   }
 
