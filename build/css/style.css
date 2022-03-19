@@ -718,7 +718,6 @@ button,
 .header {
   padding: 35px 0;
   background-color: #0e6bd4;
-  position: relative;
 }
 
 .header__wrapper {
@@ -1644,7 +1643,7 @@ button,
 
   .header__nav {
     min-width: 285px;
-    height: 100vh;
+    min-height: 100%;
     padding: 20px 10px 20px 15px;
     background-color: #f9fbfd;
     position: absolute;
