@@ -1610,8 +1610,7 @@ button,
   }
 
   .header {
-    padding: 20px 0;
-    min-height: 62px;
+    padding: 0;
     background-image: url("../img/content/main-screen-mobile-bg.jpg");
     background-position: center;
   }
@@ -1642,6 +1641,10 @@ button,
 
   .header--nav-close .header__nav {
     display: none;
+  }
+
+  .header__wrapper {
+    min-height: 62px;
   }
 
   .header__toggle {
@@ -1676,8 +1679,8 @@ button,
   }
 
   .main-screen {
-    padding-top: 137px;
-    padding-bottom: 159px;
+    padding-top: 117px;
+    padding-bottom: 178px;
   }
 
   .main-screen__wrapper h1 {

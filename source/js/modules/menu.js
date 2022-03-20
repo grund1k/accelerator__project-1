@@ -3,6 +3,7 @@ import {clearNoJsCode} from '../utils/clear-no-js';
 const header = document.querySelector('.header');
 const closeMenuButton = header.querySelector('.nav__modal-toggle');
 const overlay = document.querySelector('.overlay');
+const navLinks = document.querySelectorAll('.nav--header a');
 
 const switchOverlay = (status) => {
   if (overlay) {
@@ -26,6 +27,12 @@ const openMenu = () => {
     header.classList.remove('header--nav-close');
     switchOverlay('active');
 
+    navLinks.forEach((link) => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    overlay.addEventListener('click', closeMenu);
+
     closeMenuButton.addEventListener('click', closeMenu);
   }
 };
@@ -35,6 +42,12 @@ const closeMenu = () => {
     header.classList.add('header--nav-close');
     header.classList.remove('header--nav-open');
     switchOverlay('hidden');
+
+    navLinks.forEach((link) => {
+      link.removeEventListener('click', closeMenu);
+    });
+
+    overlay.removeEventListener('click', closeMenu);
 
     closeMenuButton.removeEventListener('click', closeMenu);
   }
