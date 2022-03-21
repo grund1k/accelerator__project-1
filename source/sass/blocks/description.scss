@@ -49,6 +49,50 @@
   }
 }
 
+.description__image-wrapper {
+  &--penguins {
+    overflow: hidden;
+    position: relative;
+    min-height: 301px;
+  }
+
+  &--penguins img {
+    position: absolute;
+    left: -98px;
+    top: -35px;
+    object-fit: unset;
+    max-width: 147%;
+    width: 121%;
+    height: auto;
+    max-height: none;
+  }
+
+  @include vp-1023 {
+    &--penguins {
+      min-height: 264px;
+    }
+
+    &--penguins img {
+        left: -63px;
+        top: 1px;
+        width: 139%;
+    }
+  }
+
+  @include vp-767 {
+    &--penguins {
+      width: 100%;
+      min-height: 186px;
+    }
+
+    &--penguins img {
+      left: -22px;
+      top: -3px;
+      width: 116%;
+    }
+  }
+}
+
 .description__text-wrapper h2 {
   font-weight: 600;
   font-size: 28px;

@@ -812,6 +812,24 @@ button,
   object-fit: cover;
 }
 
+.description__image-wrapper--penguins {
+  overflow: hidden;
+  position: relative;
+  min-height: 301px;
+}
+
+.description__image-wrapper--penguins img {
+  position: absolute;
+  left: -98px;
+  top: -35px;
+  -o-object-fit: unset;
+  object-fit: unset;
+  max-width: 147%;
+  width: 121%;
+  height: auto;
+  max-height: none;
+}
+
 .description__text-wrapper h2 {
   font-weight: 600;
   font-size: 28px;
@@ -994,6 +1012,37 @@ button,
   min-height: 386px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.tour-card__wrapper--hidden-overflow {
+  width: 100%;
+  min-height: 386px;
+  overflow: hidden;
+}
+
+.tour-card__wrapper--hidden-overflow img {
+  position: absolute;
+  -o-object-fit: unset;
+  object-fit: unset;
+  min-height: unset;
+}
+
+.tour-card__wrapper--cruise-4 img {
+  max-width: 216%;
+  width: 216%;
+  left: -120px;
+}
+
+.tour-card__wrapper--cruise-5 img {
+  max-width: 212%;
+  width: 212%;
+  left: -116px;
+}
+
+.tour-card__wrapper--cruise-8 img {
+  max-width: 273%;
+  width: 266%;
+  left: -177px;
 }
 
 .tour-card__hover-wrapper {
@@ -1370,6 +1419,16 @@ button,
     min-height: 264px;
   }
 
+  .description__image-wrapper--penguins {
+    min-height: 264px;
+  }
+
+  .description__image-wrapper--penguins img {
+    left: -63px;
+    top: 1px;
+    width: 139%;
+  }
+
   .description__text-wrapper h2 {
     max-width: 206px;
     font-size: 26px;
@@ -1420,6 +1479,7 @@ button,
 
   .tours h2 {
     letter-spacing: 1px;
+    margin: 0 0 60px 0;
   }
 
   .tours__list {
@@ -1429,6 +1489,24 @@ button,
 
   .tour-card__wrapper img {
     min-height: 386px;
+  }
+
+  .tour-card__wrapper--cruise-4 img {
+    width: 214%;
+    left: -130px;
+    top: -26px;
+  }
+
+  .tour-card__wrapper--cruise-5 img {
+    width: 192%;
+    left: -142px;
+  }
+
+  .tour-card__wrapper--cruise-8 img {
+    max-width: 280%;
+    width: 256%;
+    left: -202px;
+    top: -36px;
   }
 
   .book {
@@ -1709,6 +1787,17 @@ button,
     min-height: 186px;
   }
 
+  .description__image-wrapper--penguins {
+    width: 100%;
+    min-height: 186px;
+  }
+
+  .description__image-wrapper--penguins img {
+    left: -22px;
+    top: -3px;
+    width: 116%;
+  }
+
   .description__text-wrapper h2 {
     font-size: 24px;
     line-height: 34px;
@@ -1756,6 +1845,24 @@ button,
   .tour-card__wrapper h3 {
     left: 26px;
     bottom: 15px;
+  }
+
+  .tour-card__wrapper--cruise-4 img {
+    width: 225%;
+    max-width: 230%;
+    left: -127px;
+    top: 0;
+  }
+
+  .tour-card__wrapper--cruise-5 img {
+    max-width: 220%;
+    width: 220%;
+    left: -145px;
+  }
+
+  .tour-card__wrapper--cruise-8 img {
+    left: -175px;
+    top: 0;
   }
 
   .book {

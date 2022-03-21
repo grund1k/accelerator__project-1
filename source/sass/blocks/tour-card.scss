@@ -59,6 +59,80 @@
   }
 }
 
+.tour-card__wrapper {
+  &--hidden-overflow {
+    width: 100%;
+    min-height: 386px;
+    overflow: hidden;
+  }
+
+  &--hidden-overflow img {
+    position: absolute;
+    object-fit: unset;
+    min-height: unset;
+  }
+
+  &--cruise-4 img {
+    max-width: 216%;
+    width: 216%;
+    left: -120px;
+  }
+
+  &--cruise-5 img {
+    max-width: 212%;
+    width: 212%;
+    left: -116px;
+  }
+
+  &--cruise-8 img {
+    max-width: 273%;
+    width: 266%;
+    left: -177px;
+  }
+
+  @include vp-1023 {
+
+    &--cruise-4 img {
+      width: 214%;
+      left: -130px;
+      top: -26px;
+    }
+
+    &--cruise-5 img {
+      width: 192%;
+      left: -142px;
+    }
+
+    &--cruise-8 img {
+      max-width: 280%;
+      width: 256%;
+      left: -202px;
+      top: -36px;
+    }
+  }
+
+  @include vp-767 {
+
+    &--cruise-4 img {
+      width: 225%;
+      max-width: 230%;
+      left: -127px;
+      top: 0;
+    }
+
+    &--cruise-5 img {
+      max-width: 220%;
+      width: 220%;
+      left: -145px;
+    }
+
+    &--cruise-8 img {
+      left: -175px;
+      top: 0;
+    }
+  }
+}
+
 .tour-card__hover-wrapper {
   top: 0;
   display: none;
