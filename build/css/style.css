@@ -737,6 +737,9 @@ button,
 }
 
 .header__logo {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-right: 20px;
   z-index: 3;
 }
 
