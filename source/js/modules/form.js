@@ -58,9 +58,13 @@ const addValidation = () => {
 
   if (checkBoxLabel) {
     checkBoxLabel.addEventListener('keydown', (evt) =>{
-      if (evt.key === 'Enter') {
+      if (evt.key === 'Enter' || evt.keyCode === 32) {
         evt.preventDefault();
-        UserAgreeCheckbox.checked = true;
+        if (UserAgreeCheckbox.checked) {
+          UserAgreeCheckbox.checked = false;
+        } else {
+          UserAgreeCheckbox.checked = true;
+        }
       }
     });
   }

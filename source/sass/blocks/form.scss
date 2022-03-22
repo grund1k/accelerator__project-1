@@ -99,6 +99,7 @@
   line-height: 130%;
   letter-spacing: 0.6px;
   color: $color-alice-blue;
+  cursor: pointer;
 
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,

@@ -1203,6 +1203,7 @@ button,
   line-height: 130%;
   letter-spacing: 0.6px;
   color: #f9fbfd;
+  cursor: pointer;
 }
 
 .form__btn {
