@@ -1772,11 +1772,13 @@ button,
   .header__nav {
     min-width: 285px;
     min-height: 100%;
+    max-height: 100vh;
     padding: 20px 10px 20px 15px;
     background-color: #f9fbfd;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
+    overflow: scroll;
   }
 
   .logo {
