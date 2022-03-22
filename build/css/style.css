@@ -1024,7 +1024,7 @@ button,
   position: absolute;
   -o-object-fit: unset;
   object-fit: unset;
-  min-height: unset;
+  min-height: 386px;
 }
 
 .tour-card__wrapper--cruise-4 img {
