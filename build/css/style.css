@@ -1270,9 +1270,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .footer__logo {
@@ -1281,6 +1278,11 @@ button,
 
 .footer__nav {
   margin-right: auto;
+  margin-top: 9px;
+}
+
+.footer__social {
+  margin-top: 9px;
 }
 
 .social-list {
@@ -1289,6 +1291,9 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  max-width: 117px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1609,6 +1614,14 @@ button,
 
   .footer__logo {
     margin-right: 25px;
+  }
+
+  .footer__nav {
+    margin-top: 0;
+  }
+
+  .footer__social {
+    margin-top: 0;
   }
 
   .social-list__item:not(:last-child) {
