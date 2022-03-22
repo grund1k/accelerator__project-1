@@ -958,7 +958,7 @@ button,
 .tour-card {
   position: relative;
   width: 100%;
-  min-height: 386px;
+  max-height: 386px;
 }
 
 .tour-card:hover .tour-card__wrapper,
@@ -1055,6 +1055,7 @@ button,
   width: 100%;
   height: 100%;
   background-color: #011c40;
+  overflow: scroll;
 }
 
 .tour-card__hover-wrapper h3 {

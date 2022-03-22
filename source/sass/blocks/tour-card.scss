@@ -1,7 +1,7 @@
 .tour-card {
   position: relative;
   width: 100%;
-  min-height: 386px;
+  max-height: 386px;
 
   &:hover .tour-card__wrapper,
   &:focus .tour-card__wrapper,
@@ -140,6 +140,7 @@
   width: 100%;
   height: 100%;
   background-color: $color-tangaroa-blue;
+  overflow: scroll;
 }
 
 .tour-card__hover-wrapper h3 {
