@@ -678,6 +678,7 @@ button,
   font-weight: 500;
   color: #f9fbfd;
   letter-spacing: 1.3px;
+  line-height: 30px;
 }
 
 .nav a:active {
@@ -1084,7 +1085,7 @@ button,
 }
 
 .book {
-  padding: 50px 0 45px 0;
+  padding: 50px 0;
   background-image: url("../img/content/booking-bg.jpg");
   background-repeat: no-repeat;
   background-position: center 10%;
@@ -1280,11 +1281,6 @@ button,
 
 .footer__nav {
   margin-right: auto;
-  margin-top: 9px;
-}
-
-.footer__social {
-  margin-top: 9px;
 }
 
 .social-list {
@@ -1408,7 +1404,7 @@ button,
 
   .main-screen {
     padding-top: 232px;
-    padding-bottom: 244px;
+    padding-bottom: 238px;
   }
 
   .main-screen__wrapper {
@@ -1627,14 +1623,6 @@ button,
 
   .footer__logo {
     margin-right: 25px;
-  }
-
-  .footer__nav {
-    margin-top: 0;
-  }
-
-  .footer__social {
-    margin-top: 0;
   }
 
   .social-list__item:not(:last-child) {

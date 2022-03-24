@@ -35,22 +35,9 @@
 
 .footer__nav {
   margin-right: auto;
-  margin-top: 9px;
-
-  @include vp-1023 {
-    margin-top: 0;
-  }
 
   @include vp-767 {
     margin-right: 0;
     margin-bottom: 21px;
-  }
-}
-
-.footer__social {
-  margin-top: 9px;
-
-  @include vp-1023 {
-    margin-top: 0;
   }
 }
