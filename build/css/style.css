@@ -639,6 +639,10 @@ button,
   padding: 0 103px;
 }
 
+.body--fixed {
+  position: fixed;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1755,6 +1759,10 @@ button,
 
   .header__wrapper {
     min-height: 62px;
+  }
+
+  .header__logo {
+    margin-top: 20px;
   }
 
   .header__toggle {

@@ -4,6 +4,7 @@ const header = document.querySelector('.header');
 const closeMenuButton = header.querySelector('.nav__modal-toggle');
 const overlay = document.querySelector('.overlay');
 const navLinks = document.querySelectorAll('.nav--header a');
+const body = document.querySelector('.body');
 
 const switchOverlay = (status) => {
   if (overlay) {
@@ -26,6 +27,7 @@ const openMenu = () => {
     header.classList.add('header--nav-open');
     header.classList.remove('header--nav-close');
     switchOverlay('active');
+    body.classList.add('body--fixed');
 
     navLinks.forEach((link) => {
       link.addEventListener('click', closeMenu);
@@ -42,6 +44,7 @@ const closeMenu = () => {
     header.classList.add('header--nav-close');
     header.classList.remove('header--nav-open');
     switchOverlay('hidden');
+    body.classList.remove('body--fixed');
 
     navLinks.forEach((link) => {
       link.removeEventListener('click', closeMenu);
