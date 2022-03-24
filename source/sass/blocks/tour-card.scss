@@ -1,6 +1,6 @@
 .tour-card {
   position: relative;
-  width: 100%;
+  width: 260px;
   max-height: 386px;
 
   &:hover .tour-card__wrapper,
@@ -15,6 +15,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  @include vp-1023 {
+    width: 309px;
+  }
+
+  @include vp-767 {
+    width: 270px;
   }
 }
 
@@ -140,7 +148,7 @@
   width: 100%;
   height: 100%;
   background-color: $color-tangaroa-blue;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .tour-card__hover-wrapper h3 {

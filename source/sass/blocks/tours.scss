@@ -34,7 +34,12 @@
   padding: 0 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
   gap: 30px;
+
+  @media (max-width: 1215px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
   @include vp-1023 {
     grid-template-columns: 1fr 1fr;
